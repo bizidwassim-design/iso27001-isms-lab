@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - name: Scripts parse
+        run: python -m py_compile scripts/build_isms.py scripts/validate_isms.py tests/test_validate_isms.py
+      - name: Rebuild registers, workbooks and metrics pack from data/
+        run: python scripts/build_isms.py
+      - name: Generated CSV and Markdown must be committed up to date
+        run: git diff --exit-code -- '*.csv' '*.md'
+      - name: Validate the ISMS (93 Annex A controls, every link resolves, workbooks match the registers)
+        run: python scripts/validate_isms.py
+      - name: Validator unit tests (it must fail on broken data)
+        run: python -m unittest discover -s tests -v
+      - name: Build is deterministic (second run changes nothing, workbooks included)
+        run: |
+          sha256sum 02-risk/*.xlsx 03-soa/*.xlsx > /tmp/first.sha
+          python scripts/build_isms.py
+          sha256sum -c /tmp/first.sha
+          git diff --exit-code -- '*.csv' '*.md'

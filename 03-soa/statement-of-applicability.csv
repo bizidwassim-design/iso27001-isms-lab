@@ -1,0 +1,94 @@
+control_id,theme,title,applicable,justification,implementation_status,linked_risks,linked_requirements,treatment_actions
+A.5.1,Organizational,Policies for information security,Yes,Top-level policy and nine topic policies set the rules every team works to; clients ask for them in due diligence,Implemented,,REQ-03;REQ-08,
+A.5.2,Organizational,Information security roles and responsibilities,Yes,"Named owners for the ISMS, risks, assets and controls are needed to make anything happen",Implemented,,REQ-08,
+A.5.3,Organizational,Segregation of duties,Yes,"Supplier set-up, payment release and refunds are split between finance roles in the ERP",Implemented,,REQ-04;REQ-08,
+A.5.4,Organizational,Management responsibilities,Yes,"Line managers enforce policy, approve access and complete leaver steps for their teams",Implemented,,REQ-08,
+A.5.5,Organizational,Contact with authorities,Yes,Breach and cyber-incident notifications must reach the right UAE authority quickly,Implemented,R-20,REQ-01;REQ-14,
+A.5.6,Organizational,Contact with special interest groups,Yes,Membership of a regional logistics security forum and vendor advisories keep the team informed,Implemented,,REQ-02,
+A.5.7,Organizational,Threat intelligence,Yes,Managed SOC feeds and sector advisories are consumed; a formal monthly threat summary is not yet produced,Partially implemented,,REQ-02;REQ-07,
+A.5.8,Organizational,Information security in project management,Yes,"Portal, WMS and OT projects change the risk picture and pass a security checkpoint at design",Implemented,,REQ-03,
+A.5.9,Organizational,Inventory of information and other associated assets,Yes,Asset register exists for IT; OT inventory still incomplete,Partially implemented,R-07;R-08,REQ-09,RTP-10
+A.5.10,Organizational,Acceptable use of information and other associated assets,Yes,Acceptable use rules exist; the approved cloud and AI tools list is not yet enforced,Partially implemented,R-22,REQ-10,RTP-22
+A.5.11,Organizational,Return of assets,Yes,"Laptops, phones, scanners and badges must come back from leavers and contractors",Implemented,R-03,,
+A.5.12,Organizational,Classification of information,Yes,Four-level scheme lets staff tell consignee and payroll data apart from public material,Implemented,R-10,REQ-01,RTP-13
+A.5.13,Organizational,Labelling of information,Yes,Sensitivity labels in Microsoft 365 carry the classification and drive DLP,Implemented,R-10,REQ-01,RTP-13
+A.5.14,Organizational,Information transfer,Yes,"Manifests and customer files are exchanged daily with clients, carriers and customs brokers",Implemented,R-10;R-12,REQ-01;REQ-13,
+A.5.15,Organizational,Access control,Yes,"Role-based access across Microsoft 365, WMS, portal and ERP is the core preventive control",Implemented,R-03;R-04,REQ-07,RTP-06
+A.5.16,Organizational,Identity management,Yes,"Every user, scanner and service identity must be unique; shared scanner logins remain in Dubai",Partially implemented,R-03;R-21,REQ-05,RTP-21
+A.5.17,Organizational,Authentication information,Yes,"Passwords, keys and MFA methods are issued and protected under one standard",Implemented,R-01,REQ-07,RTP-01
+A.5.18,Organizational,Access rights,Yes,Joiner-mover-leaver process exists but leaver timing failed audit sampling,Partially implemented,R-03,REQ-03,RTP-05
+A.5.19,Organizational,Information security in supplier relationships,Yes,Over 60 suppliers and carriers touch Northwind data or systems,Partially implemented,R-06;R-13;R-14;R-24,REQ-11,RTP-24
+A.5.20,Organizational,Addressing information security within supplier agreements,Yes,"Security, breach-notification and audit clauses are in the standard contract template",Implemented,R-06;R-13;R-24,REQ-04;REQ-11,RTP-08;RTP-16
+A.5.21,Organizational,Managing information security in the ICT supply chain,Yes,"Cloud, SaaS and OT vendors bring their own sub-suppliers into the chain",Partially implemented,R-24,REQ-11,RTP-24
+A.5.22,Organizational,"Monitoring, review and change management of supplier services",Yes,Critical suppliers are reviewed yearly and on contract change,Implemented,R-13;R-14,REQ-11,RTP-16
+A.5.23,Organizational,Information security for use of cloud services,Yes,"Microsoft 365, Azure and four SaaS services carry most of the in-scope information",Implemented,R-12;R-14;R-22,REQ-13,RTP-15
+A.5.24,Organizational,Information security incident management planning and preparation,Yes,Clients expect 24-hour notification; playbooks are still being tested,Partially implemented,R-20,REQ-03;REQ-14,RTP-20
+A.5.25,Organizational,Assessment and decision on information security events,Yes,Managed SOC triage criteria decide what becomes an incident,Implemented,R-19;R-20,REQ-14,
+A.5.26,Organizational,Response to information security incidents,Yes,Response steps exist; two of four playbooks still to be exercised,Partially implemented,R-20,REQ-01;REQ-03,RTP-20
+A.5.27,Organizational,Learning from information security incidents,Yes,Post-incident reviews are done for major incidents but not yet tracked to closure,Partially implemented,R-20,,RTP-20
+A.5.28,Organizational,Collection of evidence,Yes,"Evidence may be needed for police, insurers or disciplinary cases",Implemented,R-20,REQ-14,
+A.5.29,Organizational,Information security during disruption,Yes,Security controls must stay in place when running on manual or DR arrangements,Implemented,R-09,REQ-09,
+A.5.30,Organizational,ICT readiness for business continuity,Yes,WMS RTO of 8 hours is a client commitment; DR test overdue,Partially implemented,R-09,REQ-09,RTP-12
+A.5.31,Organizational,"Legal, statutory, regulatory and contractual requirements",Yes,"Register of obligations covers PDPL, IA Regulation alignment, customs and client contracts",Implemented,R-11,REQ-01;REQ-02;REQ-06;REQ-12,RTP-14
+A.5.32,Organizational,Intellectual property rights,Yes,Software licences and portal third-party components must be used lawfully,Implemented,,REQ-12,
+A.5.33,Organizational,Protection of records,Yes,"Customs declarations, invoices and HR records have legal retention periods",Implemented,R-11,REQ-06;REQ-12,
+A.5.34,Organizational,Privacy and protection of PII,Yes,Consignee and employee personal data are processed at scale under the UAE PDPL,Implemented,R-10;R-11;R-12,REQ-01;REQ-13,RTP-14;RTP-15
+A.5.35,Organizational,Independent review of information security,Yes,"Internal audit by a trained auditor independent of IT, plus annual external penetration test",Implemented,,REQ-03;REQ-08,
+A.5.36,Organizational,"Compliance with policies, rules and standards for information security",Yes,Managers and the ISM check policy compliance; results feed the management review,Implemented,,REQ-08,
+A.5.37,Organizational,Documented operating procedures,Yes,Critical IT procedures exist; WMS integration runbooks are still being written,Partially implemented,R-01;R-17,REQ-09,RTP-02;RTP-17
+A.6.1,People,Screening,Yes,Background checks are required for staff working on the port operator's sites and for IT admins,Implemented,,REQ-05;REQ-12,
+A.6.2,People,Terms and conditions of employment,Yes,Employment contracts include confidentiality and acceptable-use duties,Implemented,,REQ-12,
+A.6.3,People,"Information security awareness, education and training",Yes,Office staff trained; warehouse shift completion below target,Partially implemented,R-01;R-21,REQ-07,RTP-02;RTP-21
+A.6.4,People,Disciplinary process,Yes,"A fair, documented process is needed when policy breaches are confirmed",Implemented,,REQ-10;REQ-12,
+A.6.5,People,Responsibilities after termination or change of employment,Yes,Confidentiality duties continue after exit; leaver access removal is late,Partially implemented,R-03,REQ-12,RTP-05
+A.6.6,People,Confidentiality or non-disclosure agreements,Yes,"NDAs are signed by contractors, carriers and suppliers with data access",Implemented,R-24,REQ-11,
+A.6.7,People,Remote working,Yes,Office staff work up to two days a week from home on managed laptops,Implemented,,REQ-07,
+A.6.8,People,Information security event reporting,Yes,Report-phishing button and a single security mailbox are available to all staff,Implemented,R-20,REQ-03,
+A.7.1,Physical,Physical security perimeters,Yes,"Four sites hold goods, IT equipment and a server room",Implemented,R-16,REQ-05,
+A.7.2,Physical,Physical entry,Yes,"Badge control, visitor log and escort rules at all sites",Implemented,R-16;R-21,REQ-05,
+A.7.3,Physical,"Securing offices, rooms and facilities",Yes,The Dubai server room and Abu Dhabi comms room need stronger protection than open offices,Implemented,R-16,,
+A.7.4,Physical,Physical security monitoring,Yes,"CCTV covers perimeters, docks and the server room",Implemented,R-16,REQ-05,
+A.7.5,Physical,Protecting against physical and environmental threats,Yes,"Fire suppression, flood sensors and heat monitoring protect the server room",Implemented,R-25,REQ-09,
+A.7.6,Physical,Working in secure areas,Yes,Rules for contractors working in the server room and on the port operator's premises,Implemented,,REQ-05,
+A.7.7,Physical,Clear desk and clear screen,Yes,Shipping documents with personal data lie on desks and dock tables,Implemented,R-21,REQ-01,
+A.7.8,Physical,Equipment siting and protection,Yes,Edge servers and OT controllers are racked and protected from dust and forklifts,Implemented,R-25,REQ-09,
+A.7.9,Physical,Security of assets off-premises,Yes,Laptops and driver phones leave the premises every day,Implemented,R-15,REQ-01,
+A.7.10,Physical,Storage media,Yes,USB storage is blocked by default; approved encrypted drives only,Implemented,,REQ-01,
+A.7.11,Physical,Supporting utilities,Yes,UPS and generator keep the server room and conveyors running,Implemented,R-25,REQ-09,
+A.7.12,Physical,Cabling security,Yes,Warehouse cabling runs near loading equipment and needs protection,Implemented,,REQ-09,
+A.7.13,Physical,Equipment maintenance,Yes,"Server room, UPS and conveyor controllers are on maintenance contracts",Implemented,R-25,REQ-09,
+A.7.14,Physical,Secure disposal or re-use of equipment,Yes,"Laptops, phones and scanners are wiped or destroyed with certificates",Implemented,,REQ-01,
+A.8.1,Technological,User endpoint devices,Yes,"Laptops, phones and scanners all process company data",Implemented,R-15,REQ-07,
+A.8.2,Technological,Privileged access rights,Yes,"Admin roles in Entra ID, Azure, WMS and ERP are the highest-impact access",Implemented,R-02;R-04;R-13;R-23,REQ-07,RTP-03;RTP-06;RTP-16
+A.8.3,Technological,Information access restriction,Yes,Portal customers must only see their own shipments; SharePoint sites are permissioned by team,Implemented,R-10,REQ-01,
+A.8.4,Technological,Access to source code,Yes,Portal source code is developed in-house; pipeline secrets migration in progress,Partially implemented,R-18,REQ-03,RTP-18
+A.8.5,Technological,Secure authentication,Yes,MFA everywhere; phishing-resistant MFA for admins and finance,Implemented,R-01;R-04,REQ-07,RTP-01
+A.8.6,Technological,Capacity management,Yes,WMS and portal load triples in the November to January peak,Implemented,R-09,REQ-09,
+A.8.7,Technological,Protection against malware,Yes,EDR on all endpoints and servers; email and file scanning in Microsoft 365,Implemented,R-01;R-02,REQ-07,RTP-04
+A.8.8,Technological,Management of technical vulnerabilities,Yes,Monthly patching with 14-day target for critical internet-facing flaws,Implemented,R-02;R-05;R-08,REQ-07,
+A.8.9,Technological,Configuration management,Yes,"Baselines for Windows, Azure resources and firewalls are kept as code or exported monthly",Implemented,R-18,REQ-02,
+A.8.10,Technological,Information deletion,Yes,Personal data must be deleted when retention periods end,Implemented,R-11,REQ-01,
+A.8.11,Technological,Data masking,Yes,Portal test data should be masked; currently copies of production are restricted instead,Planned,R-18,REQ-01,
+A.8.12,Technological,Data leakage prevention,Yes,DLP policies watch consignee and payroll data in Microsoft 365,Implemented,R-10;R-22,REQ-01,RTP-13
+A.8.13,Technological,Information backup,Yes,Immutable backups in place; restore testing not performed as planned,Partially implemented,R-02;R-09;R-23,REQ-07;REQ-09,RTP-03;RTP-23
+A.8.14,Technological,Redundancy of information processing facilities,Yes,WMS has a secondary Azure region configured but failover is untested,Partially implemented,R-09,REQ-09,RTP-12
+A.8.15,Technological,Logging,Yes,Logs are needed for detection and evidence; portal retention below standard,Partially implemented,R-04;R-19,REQ-02;REQ-14,RTP-19
+A.8.16,Technological,Monitoring activities,Yes,Managed SOC monitors Microsoft 365 and endpoints; portal and WMS coverage in progress,Partially implemented,R-07;R-19,REQ-02,RTP-19
+A.8.17,Technological,Clock synchronization,Yes,Cloud services and on-site devices use common time sources so events can be correlated,Implemented,R-19,REQ-14,
+A.8.18,Technological,Use of privileged utility programs,Yes,Admin tools are limited to privileged access workstations,Implemented,R-04,REQ-07,RTP-06
+A.8.19,Technological,Installation of software on operational systems,Yes,Endpoints controlled; HMI allowlisting planned,Partially implemented,R-02;R-08,REQ-07,RTP-04;RTP-11
+A.8.20,Technological,Networks security,Yes,Firewalls protect sites and Azure; OT boundary still being built,Partially implemented,R-07,REQ-09,RTP-09
+A.8.21,Technological,Security of network services,Yes,Internet links and SD-WAN service have security and availability terms,Implemented,,REQ-09,
+A.8.22,Technological,Segregation of networks,Yes,"Corporate, guest, scanner and OT networks must be separated",Partially implemented,R-07;R-08,REQ-09,RTP-09;RTP-11
+A.8.23,Technological,Web filtering,Yes,Malicious and unsanctioned sites must be blocked; app blocking still planned,Partially implemented,R-22,REQ-01,RTP-22
+A.8.24,Technological,Use of cryptography,Yes,"TLS, disk encryption and Key Vault-managed keys protect data and payment integration",Implemented,R-06;R-15,REQ-01;REQ-04,RTP-08
+A.8.25,Technological,Secure development life cycle,Yes,In-house portal development; security testing being added to the pipeline,Partially implemented,R-05;R-18,REQ-03,RTP-07
+A.8.26,Technological,Application security requirements,Yes,Portal and payment features carry security requirements in each user story,Implemented,R-05;R-06,REQ-01;REQ-04,
+A.8.27,Technological,Secure system architecture and engineering principles,Yes,Portal and integrations follow documented architecture principles,Implemented,R-05,REQ-03,
+A.8.28,Technological,Secure coding,Yes,Coding standard exists; SAST and dependency scanning still being rolled out,Partially implemented,R-05;R-18,REQ-03,RTP-07;RTP-18
+A.8.29,Technological,Security testing in development and acceptance,Yes,Annual pentest done; DAST in the pipeline still being added,Partially implemented,R-05,REQ-03,RTP-07
+A.8.30,Technological,Outsourced development,No,"Excluded: all portal and integration development is done by Northwind employees; WMS is configured, not developed, by the vendor. Revisit if any development is contracted out",Not applicable,,,
+A.8.31,Technological,"Separation of development, test and production environments",Yes,"Portal has separate dev, test and production subscriptions",Implemented,R-18,REQ-03,
+A.8.32,Technological,Change management,Yes,Change advisory board for production; pipeline approvals being tightened,Partially implemented,R-18,REQ-09,RTP-18
+A.8.33,Technological,Test information,Yes,Test databases must not hold live consignee data without protection,Partially implemented,R-18,REQ-01,
+A.8.34,Technological,Protection of information systems during audit testing,Yes,Penetration tests and audit queries are scheduled outside peak hours with rollback plans,Implemented,,REQ-09,

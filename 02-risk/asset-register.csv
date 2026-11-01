@@ -1,0 +1,21 @@
+asset_id,name,type,location,owner,description,confidentiality,integrity,availability,criticality,linked_risks
+AST-01,Microsoft 365 tenant,Cloud service,Microsoft UAE regions,Head of IT,"Exchange Online, SharePoint Online and Teams for all 400 staff",3,2,2,High,R-01;R-10;R-22
+AST-02,Entra ID identity platform,Cloud service,Microsoft UAE regions,Head of IT,"User, guest and admin identities; Conditional Access; Privileged Identity Management",3,3,3,High,R-01;R-03;R-04;R-13;R-24
+AST-03,Warehouse management system (NWL-WMS),Application,Azure UAE North (IaaS),Warehouse Operations Director,"Stock, slotting, picking and dispatch for both warehouses; integrates with ERP, portal and scanners",2,3,3,High,R-02;R-09;R-17;R-19
+AST-04,Customer portal (Northwind Track),Application,Azure UAE North (App Service and Azure SQL),Head of Digital,"Shipment booking, tracking and proof of delivery for business customers and consignees",3,3,2,High,R-05;R-18;R-19
+AST-05,Payments integration,Application,Azure UAE North and payment service provider,CFO,Hosted payment page from Fabrikam Pay plus Northwind webhook service that records payments and refunds,3,3,2,High,R-06
+AST-06,Contoso ERP,SaaS,Supplier cloud (EU region),CFO,"Finance, procurement, invoicing and supplier master data",3,3,2,High,R-11
+AST-07,Warehouse OT network,Operational technology,Dubai distribution centre,Warehouse Operations Director,"Conveyor PLCs, sortation controllers and two Windows HMI workstations",1,3,3,High,R-07;R-08;R-25
+AST-08,Handheld scanners and warehouse Wi-Fi,Device,Dubai and Abu Dhabi warehouses,Warehouse Operations Director,About 120 rugged scanners on a dedicated SSID used for picking and goods receipt,2,3,3,High,R-21
+AST-09,Corporate endpoints,Device,All sites and remote,Head of IT,About 380 Intune-managed Windows laptops and desktops,2,2,2,Medium,R-02
+AST-10,Driver mobile devices,Device,In vehicles,Transport Operations Manager,About 90 Android phones with the delivery app; managed by Intune,2,2,2,Medium,R-15
+AST-11,Customer and consignee personal data,Information,"Portal, WMS, Microsoft 365",Data Protection Officer,"Names, delivery addresses, phone numbers, delivery photos and signatures",3,3,2,High,R-05;R-10;R-11;R-12;R-15;R-20;R-22;R-24
+AST-12,Employee HR records,Information,Fabrikam HR (SaaS),HR Director,"Contracts, identity documents, payroll data and performance records",3,3,1,High,R-03;R-11
+AST-13,Backups,Cloud service,Azure UAE North and UAE Central,Head of IT,Azure Backup vaults for WMS and portal VMs and databases; Microsoft 365 backup,3,3,3,High,R-02;R-23
+AST-14,Network perimeter and SD-WAN,Infrastructure,All sites,Head of IT,"Next-generation firewalls and SD-WAN between Dubai, Abu Dhabi and Azure",2,3,3,High,R-07
+AST-15,Physical premises,Facility,Dubai head office and distribution centre; Abu Dhabi branch and cross-dock,Facilities Manager,"Offices, warehouses, the Dubai server room and the Abu Dhabi comms room",1,2,3,High,R-16;R-21;R-25
+AST-16,CCTV and physical access control,Infrastructure,All sites,Facilities Manager,"Cameras, recorders and badge readers with their management servers",2,2,2,Medium,R-16
+AST-17,Portal source code and CI/CD pipeline,Application,Azure DevOps (cloud),Head of Digital,"Repositories, build agents, release pipelines and pipeline secrets for Northwind Track",3,3,2,High,R-18
+AST-18,Fleet telematics service,SaaS,Supplier cloud (outside UAE),Transport Operations Manager,"Vehicle location, driver behaviour and route data for 140 vehicles",2,2,2,Medium,R-11;R-14
+AST-19,Security monitoring (Microsoft Sentinel and managed SOC),Service,Azure UAE North and Contoso Managed Services,Information Security Manager,"Log collection, analytics rules and 24x7 triage by the managed SOC provider",3,3,2,High,R-13;R-19;R-20
+AST-20,IT operations knowledge,People,Dubai head office,Head of IT,Nine-person IT team; WMS integration knowledge concentrated in one engineer,2,2,3,High,R-17
