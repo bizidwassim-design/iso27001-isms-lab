@@ -108,6 +108,13 @@ A training lab with fictional data, not legal advice and not an audited ISMS. It
 certification. Read the official texts of ISO/IEC 27001:2022, the UAE PDPL and the UAE IA Regulation, and have your own
 ISMS reviewed by your auditor and counsel.
 
+## AI assistance
+
+Built with Claude Code as a coding and writing assistant, which is why it appears as a co-author on some commits.
+**Editor and reviewer: Wassim Bizid**, who set the scope, the frameworks and the GRC approach, edited the content
+and decided what was published. Automated tests in CI check the published outputs. This is a maintainer review,
+not an independent one.
+
 ## License
 
 [MIT](LICENSE).
